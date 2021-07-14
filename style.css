@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "space mono", monospace;
+}
+.container {
+  height: 100vh;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  margin: 0 0 4em 0;
+}
+.card {
+  height: 380px;
+  width: 800px;
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  box-shadow: hsl(184, 14%, 56%) 0px 7px 29px 0px;
+  border-radius: 25px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 85%;
+  margin: 2em 2em;
+}
+.card__controls {
+  width: 100%;
+}
+.card__controls label {
+  display: block;
+  padding: 0 0 8px 0;
+  color: hsl(186, 14%, 43%);
+}
+.input__elements {
+  position: relative;
+}
+.input__elements .iconlabel {
+  position: absolute;
+  top: 28%;
+  left: 10px;
+}
+.input__elements input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background: hsl(185, 41%, 97%);
+  border-radius: 5px;
+  padding: 0 1em 0 2em;
+  text-align: right;
+  font-size: 1.2em;
+  font-family: "space mono", monospace;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  /* outline: hsl(183, 100%, 15%); */
+}
+.input__elements input:focus {
+  border: 2px solid #26c0ab;
+  outline: 0;
+}
+
+.input__elements-percentage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.input__elements-percentage input,
+.input__elements-percentage button {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: "space mono", monospace;
+  font-weight: 700;
+}
+.input__elements-percentage button {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(185, 41%, 84%);
+}
+.input__elements-percentage button:hover {
+  background-color: hsl(189, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  transition: 200ms ease;
+}
+
+.input__elements-percentage input {
+  background: hsl(185, 41%, 97%);
+  text-align: center;
+}
+.input__elements-percentage input::placeholder {
+  text-align: center;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+.card__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  width: 85%;
+  height: 85%;
+  margin: 2em 2em;
+}
+.data__shower {
+  width: 100%;
+}
+.data__shower_control {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 85%;
+  margin: 1em auto 1em auto;
+}
+.data__shower_control .data-label {
+  color: hsl(189, 41%, 97%);
+  font-weight: 600;
+}
+.data__shower_control .amount {
+  color: hsl(185, 41%, 84%);
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(185, 41%, 84%);
+}
+.data__label-person {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(184, 14%, 56%);
+}
+.reset {
+  width: 85%;
+}
+.rset {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "space mono", monospace;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.rset:hover {
+  background: hsl(189, 41%, 97%);
+  cursor: pointer;
+  transition: 200ms ease;
+}

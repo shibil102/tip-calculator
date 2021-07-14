@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <title>Tip calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+
+      <div class="card">
+        <div class="card__input">
+          <div class="card__controls">
+            <label for="bill">Bill</label>
+            <div class="input__elements">
+              <span class="iconlabel"
+                ><img src="./images/icon-dollar.svg" alt=""
+              /></span>
+              <input type="text" name="bill" id="bill" />
+            </div>
+          </div>
+
+          <div class="card__controls">
+            <label for="tip">Select tip %</label>
+            <div class="input__elements-percentage">
+              <button type="button" id="tip_btn" onclick="btnValue(5)">
+                5%
+              </button>
+              <button
+                type="button"
+                id="tip_btn"
+                value="10"
+                onclick="btnValue(10)"
+              >
+                10%
+              </button>
+              <button
+                type="button"
+                id="tip_btn"
+                value="15"
+                onclick="btnValue(15)"
+              >
+                15%
+              </button>
+              <button
+                type="button"
+                id="tip_btn"
+                value="25"
+                onclick="btnValue(25)"
+              >
+                25%
+              </button>
+              <button
+                type="button"
+                id="tip_btn"
+                value="50"
+                onclick="btnValue(50)"
+              >
+                50%
+              </button>
+              <!-- <input
+                type="number"
+                name="custom"
+                id="custom"
+                max="100"
+                min="1"
+                placeholder="Custom"
+              /> -->
+              <button
+                type="button"
+                id="tip_btn"
+                value="75%"
+                onclick="btnValue(50)"
+              >
+                75%
+              </button>
+            </div>
+          </div>
+
+          <div class="card__controls">
+            <label for="nop">Number of People</label>
+            <div class="input__elements">
+              <span class="iconlabel"
+                ><img src="./images/icon-person.svg" alt=""
+              /></span>
+              <input type="text" name="nop" id="nop" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card__data">
+          <div class="data__shower">
+            <div class="data__shower_control">
+              <p class="data-label">
+                Tip Amount <span class="data__label-person">/ Person</span>
+              </p>
+              <p class="amount">$<span class="tipamt">00</span></p>
+            </div>
+            <div class="data__shower_control">
+              <p class="data-label">
+                Total<span class="data__label-person">/ Person</span>
+              </p>
+              <p class="amount">$<span class="totamt">00</span></p>
+            </div>
+          </div>
+          <div class="reset">
+            <button id="rset" class="rset">reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
